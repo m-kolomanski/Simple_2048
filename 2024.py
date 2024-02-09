@@ -38,6 +38,18 @@ class Game:
                 self.game_on = False
                 break
 
+            if next_move == "help":
+                print('''
+                    In order to play you need to type either a number or a string representing your next move:
+                        0 - left
+                        1 - top
+                        2 - right
+                        3 - bottom
+                    In order to stop the game type "exit".
+                ''')
+
+                continue
+
             if next_move not in self.valid_moves:
                 print("Invalid move. Type help for more information on how to play.")
             else:
