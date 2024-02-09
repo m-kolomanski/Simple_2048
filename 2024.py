@@ -39,7 +39,7 @@ class Game:
                 break
 
             if next_move not in self.valid_moves:
-                next_move = input("Please enter valid move: ")
+                print("Invalid move. Type help for more information on how to play.")
             else:
                 self.calculateMove(next_move)
                 ## add random 2 
